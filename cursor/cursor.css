@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center; 
+    justify-content: center;  
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    display: flex;
+    font-size: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+#box{
+    height: 300px;
+    width: 600px;
+    background-color:white;
+    position: relative; 
+}
+#box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    position: absolute;
+    height: 100%;                                           /*this works as a screen between curson and made cursor*/
+    width: 100%;
+    background-color: transparent;
+    z-index: 10;
+}
